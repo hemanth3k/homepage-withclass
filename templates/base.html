@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>foobar</title>
-	</head>
-	<body>
-		<div>foobar</div>
-	</body>
-</html>
+<!-- templates/base.html -->
+<header>
+<a href="{% url 'home' %}">Home</a> |
+<a href="{% url 'about' %}">About</a>
+</header>
+{% block content %}
+{% endblock content %}
+
